@@ -1,2 +1,5 @@
 #Find-prime-numbers-in-C
-The program finds all prime numbers in a period.
+
+this code finds all prime numbers between 1 and the number you put in the program in C.
+
+By: Daniel Mahl Gregorini, UTFPR Medianeira.
