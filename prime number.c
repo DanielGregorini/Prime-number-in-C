@@ -7,11 +7,11 @@
    valor = 0;
    nprimosfinal = 0;
 
-   printf("Digite um valor: ");
+   printf("Enter a number: \n");
    scanf("%d", &nprimo);
 
     for (n = 1; n <= nprimo; n++){ 
-     aux = 0;
+      aux = 0;
       for (i = 1; i <= n; i++){
 
         if (n % i == 0){
@@ -26,7 +26,7 @@
 
     }
    printf("-----------------------------------------\n");
-   printf("Is %d prime number in between 1 and %d",nprimosfinal,nprimo);
+   printf("There is %d prime numbers in between 1 and %d",nprimosfinal,nprimo);
 
   return 0;
   }
