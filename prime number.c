@@ -1,5 +1,5 @@
   #include <stdio.h>
-
+  
   int main(void) {
 
    int i, n, valor, aux, nprimo, nprimosfinal;
@@ -7,7 +7,7 @@
    valor = 0;
    nprimosfinal = 0;
 
-   printf("Enter a number: \n");
+   printf("Enter a number: ");
    scanf("%d", &nprimo);
 
     for (n = 1; n <= nprimo; n++){ 
@@ -25,8 +25,8 @@
       }
 
     }
-   printf("-----------------------------------------\n");
+   printf("------------------------------------------------------------------\n");
    printf("There is %d prime numbers in between 1 and %d",nprimosfinal,nprimo);
 
-  return 0;
+  return 0; 
   }
