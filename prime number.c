@@ -1,37 +1,38 @@
-  #include <stdio.h>
-  #include <conio.h>
-  
-  int main(void) {
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
 
-   int i, n, valor, aux, nprimo, nprimosfinal;
-   aux = 0;
-   valor = 0;
-   nprimosfinal = 0;
+int main(void)
+{
 
-   printf("Enter a number: ");
-   scanf("%d", &nprimo);
+  long long int number;
+  int n, i, nprime = 0, aux = 0;
 
-    for (n = 1; n <= nprimo; n++){ 
+  printf("Enter a number: ");
+  scanf("%lld", &number);
 
-      aux = 0;
+  for (n = 1; n <= number; n++) {
 
-      for (i = 1; i <= n; i++){
+    aux = 0;
+    
+    for (i = 1; i <= n; i++) {
 
-        if (n % i == 0){
-          aux++;
-        }
-
+      if (n % i == 0) {
+        aux++;
       }
-      if (aux <= 2){
-        printf("%d is a prime number\n",n);
-        nprimosfinal++;
+      if (aux > 2) {
+        break;
       }
-
     }
-   printf("\n\n-------------------------------------------------\n");
-   printf("There is %d prime numbers in between 1 and %d",nprimosfinal,nprimo);
+    if (aux <= 2) {
+      printf("\n%d is a prime number", n);
+      nprime++;
+    }
+  }
 
+  printf("\n\n-------------------------------------------------\n");
+  printf("There is %d prime numbers in between 1 and %d\n", nprime, number);
 
   getch();
-  return 0; 
-  }
+  return 0;
+}
